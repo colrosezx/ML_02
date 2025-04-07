@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/ADM/OneDrive/Desktop/STUDY/ML_02/mlruns/0/87d828465045478ba1d86df7cf249553/artifacts
+end_time: 1742825969802
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 87d828465045478ba1d86df7cf249553
+run_name: SGD_Optimization
+run_uuid: 87d828465045478ba1d86df7cf249553
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742825961186
+status: 3
+tags: []
+user_id: ADM

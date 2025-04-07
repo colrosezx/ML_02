@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/409172786683459498/e6fb3685bb514a9482fb69ba002b9cd1/artifacts
+end_time: 1742828384613
+entry_point_name: ''
+experiment_id: '409172786683459498'
+lifecycle_stage: active
+run_id: e6fb3685bb514a9482fb69ba002b9cd1
+run_name: SGDRegressor_Optimization
+run_uuid: e6fb3685bb514a9482fb69ba002b9cd1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742828381668
+status: 4
+tags: []
+user_id: ADM

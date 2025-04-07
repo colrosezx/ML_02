@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/ADM/OneDrive/Desktop/STUDY/ML_02/mlruns/0/6f5cf1e3d6a94c21868402c64f8bdfa4/artifacts
+end_time: 1742826281962
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6f5cf1e3d6a94c21868402c64f8bdfa4
+run_name: salty-toad-286
+run_uuid: 6f5cf1e3d6a94c21868402c64f8bdfa4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742826103669
+status: 3
+tags: []
+user_id: ADM

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/409172786683459498/5d7dd327f7074b0ea7731d5fa8667e9a/artifacts
+end_time: 1742828729130
+entry_point_name: ''
+experiment_id: '409172786683459498'
+lifecycle_stage: active
+run_id: 5d7dd327f7074b0ea7731d5fa8667e9a
+run_name: XGBoost_Opt
+run_uuid: 5d7dd327f7074b0ea7731d5fa8667e9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742828723928
+status: 3
+tags: []
+user_id: ADM

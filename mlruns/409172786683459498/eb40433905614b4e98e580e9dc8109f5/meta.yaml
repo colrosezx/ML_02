@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/409172786683459498/eb40433905614b4e98e580e9dc8109f5/artifacts
+end_time: 1742828662192
+entry_point_name: ''
+experiment_id: '409172786683459498'
+lifecycle_stage: active
+run_id: eb40433905614b4e98e580e9dc8109f5
+run_name: SGDClassifier_Optimization
+run_uuid: eb40433905614b4e98e580e9dc8109f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742828657653
+status: 3
+tags: []
+user_id: ADM

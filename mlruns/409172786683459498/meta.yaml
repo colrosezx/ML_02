@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/409172786683459498
+creation_time: 1742828381519
+experiment_id: '409172786683459498'
+last_update_time: 1742828381519
+lifecycle_stage: active
+name: Survived_Prediction

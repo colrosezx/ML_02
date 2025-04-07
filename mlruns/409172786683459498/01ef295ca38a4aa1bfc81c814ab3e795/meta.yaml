@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/409172786683459498/01ef295ca38a4aa1bfc81c814ab3e795/artifacts
+end_time: 1742829016805
+entry_point_name: ''
+experiment_id: '409172786683459498'
+lifecycle_stage: active
+run_id: 01ef295ca38a4aa1bfc81c814ab3e795
+run_name: RandomForest_Opt
+run_uuid: 01ef295ca38a4aa1bfc81c814ab3e795
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742829016769
+status: 3
+tags: []
+user_id: ADM

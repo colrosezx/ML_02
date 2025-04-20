@@ -2,28 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/colrosezx/ML_02.git'
-            }
-        }
-        
         stage('Install dependencies') {
             steps {
-                sh 'pip install pandas scikit-learn'
+                bat 'pip install pandas scikit-learn flask'
             }
         }
         
         stage('Train model') {
             steps {
-                sh 'python main.py'
+                bat 'python train.py'
             }
-        }
-        
-        stage('Archive artifacts') {
-            steps {
-                archiveArtifacts artifacts: 'model.pkl', fingerprint: true
-                archiveArtifacts artifacts: 'metrics.txt', fingerprint: true
+            post {
+                success {
+                    archiveArtifacts artifacts: 'model.pkl,metrics.txt', fingerprint: true
+                }
             }
         }
     }
@@ -31,8 +23,12 @@ pipeline {
     post {
         always {
             script {
-                def metrics = readFile 'metrics.txt'
-                echo "Model metrics:\n${metrics}"
+                if (fileExists('metrics.txt')) {
+                    def metrics = readFile 'metrics.txt'
+                    echo "Model metrics:\n${metrics}"
+                } else {
+                    echo "Metrics file not found - training probably failed"
+                }
             }
         }
     }

@@ -10,7 +10,7 @@ pipeline {
         
         stage('Train model') {
             steps {
-                bat 'python train.py'
+                bat 'C:\\Users\\ADM\\AppData\\Local\\Programs\\Python\\Python313\\python.exe main.py'
             }
             post {
                 success {

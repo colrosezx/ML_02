@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                bat 'pip install pandas scikit-learn flask'
+                bat 'python -m pip install pandas scikit-learn flask'
             }
         }
         

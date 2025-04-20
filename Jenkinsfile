@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                bat 'python -m pip install pandas scikit-learn flask'
+                bat 'C:\\Users\\ADM\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\pip.exe install pandas scikit-learn flask'
             }
         }
         

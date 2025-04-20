@@ -25,9 +25,7 @@ def predict():
             data['Age'],
             data['SibSp'],
             data['Parch'],
-            data['Ticket'],
             data['Fare'],
-            data['Cabin'], 
             data['Embarked']
         ]
         prediction = model.predict([features])

@@ -22,9 +22,10 @@ pipeline {
         stage('Deploy service') {
             steps {
                 bat '''
-                    echo Запуск Flask-сервиса...
+                    echo Запуск сервиса предсказания выживания на Титанике...
                     start /B C:\\Users\\ADM\\AppData\\Local\\Programs\\Python\\Python313\\python.exe app.py
                     echo Сервис запущен на http://localhost:5000
+                    echo Для проверки используйте: curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d "{\\"Pclass\\":1,\\"Name\\":\\"Ann\\", \\"Sex\\":\\"male\\", \\"Age\\":30, \\"SibSp\\":0, \\"Parch\\":0, \\"Fare\\":71.2833, \\"Embarked\\":\\"S\\"}"
                 '''
             }
         }
@@ -36,14 +37,9 @@ pipeline {
                 if (fileExists('metrics.txt')) {
                     def metrics = readFile 'metrics.txt'
                     echo "Model metrics:\n${metrics}"
-                } else {
-                    echo "Metrics file not found - training probably failed"
                 }
             }
         }
-        success {
-            echo 'Flask service deployed successfully!'
-            echo 'API endpoint: http://localhost:5000/predict'
-        }
     }
 }
+В\
